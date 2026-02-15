@@ -1,0 +1,49 @@
+{% load static %}
+<!-- start header -->
+<header>
+    <!-- start navigation -->
+    <nav class="navbar navbar-expand-lg header-transparent bg-transparent center-logo disable-fixed">
+        <div class="container-fluid">
+            <div class="col-auto col-lg-2 menu-logo">
+                <div class="d-none d-lg-block">
+                    <div class="fs-18 lg-fs-16"><a href="tel:1800222000" class="widget-text text-white-hover"><i class="bi bi-telephone-fill icon-small me-10px lg-me-5px"></i>0 800 222 000</a></div>
+                </div> 
+                <a class="navbar-brand" href="{% url 'fkmotors:home' %}">
+                    <img src="{% static 'images/demo-barber-logo-black.png' %}" data-at2x="{% static 'images/demo-barber-logo-black@2x.png' %}" alt="FK Motors" class="default-logo">
+                    <img src="{% static 'images/demo-barber-logo-black.png' %}" data-at2x="{% static 'images/demo-barber-logo-black@2x.png' %}" alt="FK Motors" class="alt-logo">
+                    <img src="{% static 'images/demo-barber-logo-black.png' %}" data-at2x="{% static 'images/demo-barber-logo-black@2x.png' %}" alt="FK Motors" class="mobile-logo">
+                </a>   
+            </div>
+            <div class="col-auto col-lg-8 menu-order">
+                <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Menüyü aç">
+                    <span class="navbar-toggler-line"></span>
+                    <span class="navbar-toggler-line"></span>
+                    <span class="navbar-toggler-line"></span>
+                    <span class="navbar-toggler-line"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">  
+                    <ul class="navbar-nav navbar-left justify-content-end"> 
+                        <li class="nav-item"><a href="#home" class="nav-link inner-link">Ana Sayfa</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link inner-link">Hakkımızda</a></li>
+                        <li class="nav-item"><a href="#services" class="nav-link inner-link">Hizmetler</a></li> 
+                    </ul>
+                    <ul class="navbar-nav navbar-right justify-content-start"> 
+                        <li class="nav-item"><a href="#pricing" class="nav-link inner-link">Fiyatlar</a></li>
+                        <li class="nav-item"><a href="#team" class="nav-link inner-link">Ekip</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link inner-link">İletişim</a></li> 
+                    </ul> 
+                </div>
+            </div> 
+            <div class="col-auto col-lg-2 text-end">
+                <div class="header-icon">  
+                    <div class="header-social-icon icon">
+                        <a href="http://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="http://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="http://www.twitter.com" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- end header -->

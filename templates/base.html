@@ -1,0 +1,51 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="tr">
+    <head>
+        <title>{% block title %}FK Motors - Makine Bakım & Motosiklet Servisi{% endblock %}</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="author" content="ThemeZaa">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta name="description" content="{% block meta_description %}FK Motors - Fabrikalara makine bakım ve tamir hizmeti. Ek olarak motosiklet bakımı. Uzman ekibimizle hizmetinizdeyiz.{% endblock %}">
+        <!-- favicon icon -->
+        <link rel="shortcut icon" href="{% static 'images/favicon.png' %}">
+        <link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon-57x57.png' %}">
+        <link rel="apple-touch-icon" sizes="72x72" href="{% static 'images/apple-touch-icon-72x72.png' %}">
+        <link rel="apple-touch-icon" sizes="114x114" href="{% static 'images/apple-touch-icon-114x114.png' %}">
+        <!-- google fonts preconnect -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- style sheets and font icons  -->
+        <link rel="stylesheet" href="{% static 'css/vendors.min.css' %}"/>
+        <link rel="stylesheet" href="{% static 'css/icon.min.css' %}"/>
+        <!-- Icon fonts CDN (local fonts yoksa yedek) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+        <link rel="stylesheet" href="{% static 'css/responsive.css' %}"/>
+        <link rel="stylesheet" href="{% static 'css/barber.css' %}" />
+        {% block extra_css %}{% endblock %}
+    </head>
+    <body data-mobile-nav-style="classic">
+        {% include "components/navbar.html" %}
+
+        {% block content %}{% endblock %}
+
+        {% include "components/footer.html" %}
+
+        <!-- start scroll progress -->
+        <div class="scroll-progress d-none d-xxl-block">
+            <a href="#" class="scroll-top" aria-label="scroll">
+                <span class="scroll-text">Kaydır</span><span class="scroll-line"><span class="scroll-point"></span></span>
+            </a>
+        </div>
+        <!-- end scroll progress -->
+        <!-- javascript libraries -->
+        <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/vendors.min.js' %}"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=<YOUR_API_KEY>&callback=initMap"></script>
+        <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+        {% block extra_js %}{% endblock %}
+    </body>
+</html>
