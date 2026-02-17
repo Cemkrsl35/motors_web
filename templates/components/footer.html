@@ -1,22 +1,47 @@
 {% load static %}
 <!-- start footer -->
-<footer class="footer-light position-relative cover-background" style="background-image: url('https://placehold.co/1920x585')">
-    <div class="container"> 
-        <div class="row justify-content-center align-items-center">
-            <div class="col-md-10 text-center">
-                <a href="{% url 'fkmotors:home' %}" class="footer-logo position-relative z-index-1 d-inline-block">
-                    <img src="{% static 'images/demo-barber-logo-black.png' %}" data-at2x="{% static 'images/demo-barber-logo-black@2x.png' %}" alt="FK Motors">
-                </a>
-                <span class="fs-90 xs-fs-60 alt-font text-base-color opacity-4 d-block mt-minus-50px mb-30px ls-minus-4px xs-ls-minus-2px">Fabrikalara makine bakım & motosiklet servisi</span>
-                <div class="col-12 text-center elements-social social-icon-style-09 mb-30px">
-                    <ul class="large-icon light">
-                        <li><a class="facebook" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i><span></span></a></li>
-                        <li><a class="instagram" href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i><span></span></a></li>
-                        <li><a class="twitter" href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i><span></span></a></li>  
-                        <li><a class="dribbble" href="http://www.dribbble.com" target="_blank"><i class="fa-brands fa-dribbble"></i><span></span></a></li>
-                    </ul>
+<footer class="footer-light position-relative cover-background footer-modern" style="background-image: url('{% static 'images/resim4.jpg' %}')">
+    <div class="footer-modern-overlay"></div>
+    <div class="position-absolute left-0px top-minus-50px md-top-minus-30px sm-top-minus-25px xs-top-minus-15px background-position-left-top w-100 h-100px md-h-50px background-size-100 background-no-repeat" style="background-image: url('{% static 'images/demo-barber-home-bg-down.png' %}')"></div>
+    <div class="container position-relative z-index-2"> 
+        <div class="row justify-content-center">
+            <div class="col-12 col-xl-11">
+                <div class="footer-modern-card border-radius-6px">
+                    <div class="row align-items-center g-4 mb-35px">
+                        <div class="col-lg-5 text-center text-lg-start">
+                            <a href="{% url 'fkmotors:home' %}" class="footer-logo d-inline-block mb-10px">
+                                <img src="{% static 'images/demo-barber-logo-black.png' %}" data-at2x="{% static 'images/demo-barber-logo-black@2x.png' %}" alt="FK Motors">
+                            </a>
+                            <h5 class="text-white fw-700 mb-10px">FK Motors</h5>
+                            <p class="text-white opacity-8 mb-0">Fabrikalara makine bakım, tamir ve teknik destek hizmeti.</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="footer-contact-list text-center text-lg-start">
+                                <a href="tel:0800222000" class="d-block text-white mb-10px"><i class="bi bi-telephone-fill me-10px"></i>0 800 222 000</a>
+                                <a href="mailto:info@fkmotors.com" class="d-block text-white mb-10px"><i class="bi bi-envelope-fill me-10px"></i>info@fkmotors.com</a>
+                                <span class="d-block text-white opacity-8"><i class="bi bi-geo-alt-fill me-10px"></i>Türkiye Geneli Saha Hizmeti</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="elements-social social-icon-style-09 text-center text-lg-end">
+                                <ul class="large-icon light">
+                                    <li><a class="facebook" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i><span></span></a></li>
+                                    <li><a class="instagram" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i><span></span></a></li>
+                                    <li><a class="twitter" href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i><span></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-modern-bottom d-flex flex-column flex-md-row align-items-center justify-content-between gap-10px">
+                        <p class="mb-0 fs-15 text-white opacity-8">&copy; {% now "Y" %} FK Motors - Makine Bakım & Motosiklet Servisi</p>
+                        <a href="#appointment" class="btn btn-small btn-round-edge btn-box-shadow btn-switch-text btn-white left-icon">
+                            <span>
+                                <span><i class="bi bi-calendar3"></i></span>
+                                <span class="btn-double-text" data-text="Randevu Al">Randevu Al</span>
+                            </span>
+                        </a>
+                    </div>
                 </div>
-                <p class="mb-0 fs-16">&copy; 2025 FK Motors - Makine Bakım & Motosiklet Servisi</p>
             </div>
         </div>
     </div> 

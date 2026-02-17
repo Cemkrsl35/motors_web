@@ -3,12 +3,17 @@
 
 {% block content %}
         <!-- start banner -->
-        <section id="home" class="full-screen bg-dark-gray ipad-top-space-margin position-relative md-h-600px sm-h-500px" data-parallax-background-ratio="0.5" style="background-image: url('https://placehold.co/1920x1080')">
-            <div class="container h-100">
+        <section id="home" class="hero-modern-home bg-dark-gray position-relative" data-parallax-background-ratio="0.5">
+            <div class="hero-modern-slider" aria-hidden="true">
+                <div class="hero-modern-slide is-active" style="background-image: url('{% static 'images/resim3.jpg' %}')"></div>
+                <div class="hero-modern-slide" style="background-image: url('{% static 'images/resim1.jpg' %}')"></div>
+                <div class="hero-modern-slide" style="background-image: url('{% static 'images/resim4.jpg' %}')"></div>
+            </div>
+            <div class="container h-100 position-relative z-index-2">
                 <div class="row align-items-center justify-content-center h-100">
-                    <div class="col-lg-9 col-md-12 text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>  
-                        <span class="fs-16 text-white text-uppercase text-shadow-double-large ls-3px d-block mb-25px sm-mb-15px">Fabrikalara makine bakım hizmeti</span>
-                        <h1 class="fs-90 md-fs-80 ls-minus-4px alt-font text-white mb-35px md-mb-20px text-shadow-double-large xs-fs-60 xs-ls-minus-2px">Makine Bakım & Motosiklet Servisi</h1>
+                    <div class="col-lg-9 col-md-12 text-center hero-modern-content" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>  
+                        <span class="fs-16 text-white text-uppercase ls-3px d-block mb-25px sm-mb-15px">Fabrikalara makine bakım hizmeti</span>
+                        <h1 class="fs-90 md-fs-80 ls-minus-4px alt-font text-white mb-35px md-mb-20px xs-fs-60 xs-ls-minus-2px">Makine Bakım & Motosiklet Servisi</h1>
                         <a href="#appointment" class="btn btn-extra-large btn-round-edge btn-box-shadow btn-switch-text btn-white left-icon section-link">
                             <span>
                                 <span><i class="bi bi-calendar3"></i></span>
@@ -16,6 +21,19 @@
                             </span>
                         </a>
                     </div> 
+                    <div class="hero-modern-dots" aria-label="Giriş görsel sliderı">
+                        <button class="hero-modern-dot is-active" type="button" aria-label="1. görsel"></button>
+                        <button class="hero-modern-dot" type="button" aria-label="2. görsel"></button>
+                        <button class="hero-modern-dot" type="button" aria-label="3. görsel"></button>
+                    </div>
+                    <div class="hero-modern-arrows" aria-label="Slider kontrolleri">
+                        <button class="hero-modern-arrow hero-modern-prev" type="button" aria-label="Önceki görsel">
+                            <i class="bi bi-chevron-left"></i>
+                        </button>
+                        <button class="hero-modern-arrow hero-modern-next" type="button" aria-label="Sonraki görsel">
+                            <i class="bi bi-chevron-right"></i>
+                        </button>
+                    </div>
                     <div class="text-center position-absolute left-0px bottom-50px md-bottom-30px w-100 animation-float">
                         <a href="#about" class="d-block text-white section-link">
                             <i class="bi bi-mouse icon-extra-medium lh-0px"></i>
@@ -27,12 +45,12 @@
         <!-- end banner --> 
         <!-- start section -->
         <section id="about" class="bg-very-light-yellow position-relative pb-8">
-            <div class="fs-200 lg-fs-150 alt-font text-base-color position-absolute left-0px top-90px sm-top-50px pe-5 ps-5 ls-minus-10px" data-anime='{ "translateX": [-50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>2023<span class="h-1px w-100 bg-base-color position-absolute top-50 start-0 d-block opacity-4"></span></div>
+            <div class="fs-200 lg-fs-150 alt-font text-base-color position-absolute left-0px top-90px sm-top-50px pe-5 ps-5 ls-minus-10px" data-anime='{ "translateX": [-50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>ODAK<span class="h-1px w-100 bg-base-color position-absolute top-50 start-0 d-block opacity-4"></span></div>
             <div class="container">
                 <div class="row align-items-center mb-50px sm-mb-40px">
                     <div class="col-xl-5 col-lg-6 align-self-end mt-15 xl-mt-18 md-mt-22 xs-mt-30" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <h2 class="fs-60 alt-font fw-400 ls-minus-2px text-dark-gray mb-15px shadow-none" data-shadow-animation="true" data-animation-delay="700">Fabrikalara uzman <span class="text-highlight">makine bakım<span class="bg-base-color h-2px bottom-8px separator-animation"></span></span> hizmeti.</h2>
-                        <p class="w-90 xl-w-100 mb-30px sm-mb-25px">Dükkanımızı fabrikalara makine bakım ve tamir hizmeti vermek amacıyla açtık. Ana işimiz makine bakımı; ek olarak motosiklet bakımı da yapıyoruz. 5000+ müşteri memnuniyeti ile hizmetinizdeyiz.</p>
+                        <h2 class="fs-60 alt-font fw-400 ls-minus-2px text-dark-gray mb-15px shadow-none" data-shadow-animation="true" data-animation-delay="700">Yeni nesil <span class="text-highlight">bakım partneri<span class="bg-base-color h-2px bottom-8px separator-animation"></span></span></h2>
+                        <p class="w-90 xl-w-100 mb-30px sm-mb-25px">FK Motors, üretim tesislerine odaklanan genç ve çevik bir teknik ekip. Makine bakım, arıza müdahalesi ve motosiklet servisini sade bir süreçle, hızlı iletişimle ve şeffaf iş takibiyle sunuyoruz.</p>
                         <div class="d-inline-block">
                             <a href="#services" class="btn btn-large btn-round-edge btn-box-shadow btn-switch-text btn-dark-gray left-icon section-link me-20px">
                                 <span>
@@ -51,14 +69,14 @@
                     </div>
                     <div class="col-lg-6 offset-xl-1 position-relative md-mt-45px md-mb-50px">
                         <div class="position-relative w-70 md-w-60" data-animation-delay="100" data-shadow-animation="true" data-bottom-top="transform: translateY(50px)" data-top-bottom="transform: translateY(-50px)">
-                            <img src="https://placehold.co/410x535" class="border-radius-6px" alt="" >
+                            <img src="{% static 'images/resim1.jpg' %}" class="border-radius-6px about-image-primary" alt="" >
                             <div class="position-absolute right-minus-150px md-right-minus-120px top-30px xs-top-20px text-end">
-                                <span class="fs-28 alt-font text-dark-gray d-block ls-minus-1px me-10px">kuruluş</span>
-                                <span class="fs-90 alt-font text-base-color d-block ls-minus-5px">1998</span>
+                                <span class="fs-28 alt-font text-dark-gray d-block ls-minus-1px me-10px">yaklaşım</span>
+                                <span class="fs-90 alt-font text-base-color d-block ls-minus-5px">çevik</span>
                             </div>
                         </div>
                         <div class="position-absolute right-15px bottom-minus-60px border-radius-6px lg-w-65 md-w-50 overflow-hidden" data-shadow-animation="true" data-animation-delay="400" data-bottom-top="transform: translateY(-15px)" data-top-bottom="transform: translateY(15px)">
-                            <img src="https://placehold.co/375x375" class="box-shadow-quadruple-large" alt="">
+                            <img src="{% static 'images/resim2.jpg' %}" class="box-shadow-quadruple-large about-image-secondary" alt="">
                         </div>
                     </div>
                 </div>
@@ -67,8 +85,6 @@
         <!-- end section -->
         <!-- start section -->
         <section id="services" class="bg-medium-yellow position-relative overlap-height pt-4">
-            <div class="position-absolute left-0px top-minus-50px md-top-minus-30px sm-top-minus-25px xs-top-minus-15px background-position-left-top w-100 h-100px md-h-50px background-size-100 background-no-repeat" style="background-image: url('{% static 'images/demo-barber-home-bg-up.png' %}')"></div>
-            <div class="position-absolute left-0px top-minus-130px lg-top-minus-90px d-none d-md-block"><img src="https://placehold.co/90x240" data-bottom-top="transform: translateY(50px)" data-top-bottom="transform: translateY(-50px)" alt="" /></div>
             <div class="container overlap-gap-section">
                 <div class="row mb-3">
                     <div class="col-12 text-center" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
@@ -81,7 +97,6 @@
                         <div class="pe-50px ps-50px pb-40px lg-p-30px lg-pt-0">
                             <div class="position-relative ms-auto me-auto mb-25px">
                                 <i class="bi bi-gear-fill text-base-color position-relative z-index-1 mt-35px d-block" style="font-size: 2.75rem;"></i>
-                                <div class="h-85px w-85px rounded-circle bg-very-light-yellow position-absolute top-0 start-50 translate-middle-x"></div>
                             </div>
                             <span class="fs-20 fw-700 text-dark-gray d-block mb-5px">Makine Bakımı</span>
                             <p class="lh-28">Fabrikalardaki endüstriyel makinelerin periyodik bakımı ve arıza önleme hizmetleri.</p>
@@ -105,7 +120,6 @@
                         <div class="pe-50px ps-50px pb-40px lg-p-30px lg-pt-0">
                             <div class="position-relative ms-auto me-auto mb-25px">
                                 <i class="bi bi-wrench-adjustable text-base-color position-relative z-index-1 mt-35px d-block" style="font-size: 2.75rem;"></i>
-                                <div class="h-85px w-85px rounded-circle bg-very-light-yellow position-absolute top-0 start-50 translate-middle-x"></div>
                             </div>
                             <span class="fs-20 fw-700 text-dark-gray d-block mb-5px">Makine Tamiri</span>
                             <p class="lh-28">Arızalı makinelerin hızlı ve güvenilir tamiri, yedek parça değişimi.</p>
@@ -129,7 +143,6 @@
                         <div class="pe-50px ps-50px pb-40px lg-p-30px lg-pt-0">
                             <div class="position-relative ms-auto me-auto mb-25px">
                                 <i class="bi bi-bicycle text-base-color position-relative z-index-1 mt-35px d-block" style="font-size: 2.75rem;"></i>
-                                <div class="h-85px w-85px rounded-circle bg-very-light-yellow position-absolute top-0 start-50 translate-middle-x"></div>
                             </div>
                             <span class="fs-20 fw-700 text-dark-gray d-block mb-5px">Motosiklet Bakımı</span>
                             <p class="lh-28">Ek iş olarak motosiklet bakım, yağ değişimi ve periyodik servis.</p>
@@ -153,7 +166,6 @@
                         <div class="pe-50px ps-50px pb-40px lg-p-30px lg-pt-0">
                             <div class="position-relative ms-auto me-auto mb-25px">
                                 <i class="bi bi-box-seam-fill text-base-color position-relative z-index-1 mt-35px d-block" style="font-size: 2.75rem;"></i>
-                                <div class="h-85px w-85px rounded-circle bg-very-light-yellow position-absolute top-0 start-50 translate-middle-x"></div>
                             </div>
                             <span class="fs-20 fw-700 text-dark-gray d-block mb-5px">Yedek Parça</span>
                             <p class="lh-28">Orijinal ve uyumlu yedek parça temini, makine ve motosiklet için.</p>
@@ -176,7 +188,7 @@
                 <div class="row justify-content-center">
                     <div class="col-auto text-center last-paragraph-no-margin">
                         <div class="d-inline-block align-middle me-5px">
-                            <img src="https://placehold.co/114x38" class="h-20px" alt="">
+                            <img src="{% static 'images/resim5.jpg' %}" class="h-20px" alt="">
                         </div>
                         <div class="fs-20 ls-minus-05px text-dark-gray d-inline-block align-middle">Fabrikalarınızın makineleri ve motosikletiniz bizimle güvende.</div>
                     </div>
@@ -193,9 +205,9 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide transition-inner-all">
                                     <div class="gallery-box">
-                                        <a href="https://placehold.co/1220x930" data-group="lightbox-gallery" title="Galeri">
+                                        <a href="{% static 'images/resim1.jpg' %}" data-group="lightbox-gallery" title="Galeri">
                                             <div class="position-relative gallery-image bg-dark-gray overflow-hidden border-radius-6px">
-                                                <img src="https://placehold.co/1220x930" class="h-480px sm-h-250px" alt="" />
+                                                <img src="{% static 'images/resim1.jpg' %}" class="h-480px sm-h-250px" alt="" />
                                                 <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                     <div class="d-flex align-items-center justify-content-center w-80px h-80px rounded-circle bg-white">
                                                         <i class="bi bi-zoom-in text-dark-gray icon-extra-medium"></i>
@@ -207,9 +219,9 @@
                                 </div>
                                 <div class="swiper-slide transition-inner-all">
                                     <div class="gallery-box">
-                                        <a href="https://placehold.co/760x930" data-group="lightbox-gallery" title="Galeri">
+                                        <a href="{% static 'images/resim2.jpg' %}" data-group="lightbox-gallery" title="Galeri">
                                             <div class="position-relative gallery-image bg-dark-gray overflow-hidden border-radius-6px">
-                                                <img src="https://placehold.co/760x930" class="h-480px sm-h-250px" alt="" />
+                                                <img src="{% static 'images/resim2.jpg' %}" class="h-480px sm-h-250px" alt="" />
                                                 <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                     <div class="d-flex align-items-center justify-content-center w-80px h-80px rounded-circle bg-white">
                                                         <i class="bi bi-zoom-in text-dark-gray icon-extra-medium"></i>
@@ -221,9 +233,9 @@
                                 </div>
                                 <div class="swiper-slide transition-inner-all">
                                     <div class="gallery-box">
-                                        <a href="https://placehold.co/940x930" data-group="lightbox-gallery" title="Galeri">
+                                        <a href="{% static 'images/resim3.jpg' %}" data-group="lightbox-gallery" title="Galeri">
                                             <div class="position-relative gallery-image bg-dark-gray overflow-hidden border-radius-6px">
-                                                <img src="https://placehold.co/940x930" class="h-480px sm-h-250px" alt="" />
+                                                <img src="{% static 'images/resim3.jpg' %}" class="h-480px sm-h-250px" alt="" />
                                                 <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                     <div class="d-flex align-items-center justify-content-center w-80px h-80px rounded-circle bg-white">
                                                         <i class="bi bi-zoom-in text-dark-gray icon-extra-medium"></i>
@@ -235,9 +247,9 @@
                                 </div>
                                 <div class="swiper-slide transition-inner-all">
                                     <div class="gallery-box">
-                                        <a href="https://placehold.co/1100x930" data-group="lightbox-gallery" title="Galeri">
+                                        <a href="{% static 'images/resim4.jpg' %}" data-group="lightbox-gallery" title="Galeri">
                                             <div class="position-relative gallery-image bg-dark-gray overflow-hidden border-radius-6px">
-                                                <img src="https://placehold.co/1100x930" class="h-480px sm-h-250px" alt="" />
+                                                <img src="{% static 'images/resim4.jpg' %}" class="h-480px sm-h-250px" alt="" />
                                                 <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                     <div class="d-flex align-items-center justify-content-center w-80px h-80px rounded-circle bg-white">
                                                         <i class="bi bi-zoom-in text-dark-gray icon-extra-medium"></i>
@@ -249,9 +261,9 @@
                                 </div>
                                 <div class="swiper-slide transition-inner-all">
                                     <div class="gallery-box">
-                                        <a href="https://placehold.co/1100x930" data-group="lightbox-gallery" title="Galeri">
+                                        <a href="{% static 'images/resim4.jpg' %}" data-group="lightbox-gallery" title="Galeri">
                                             <div class="position-relative gallery-image bg-dark-gray overflow-hidden border-radius-6px">
-                                                <img src="https://placehold.co/1100x930" class="h-480px sm-h-250px" alt="" />
+                                                <img src="{% static 'images/resim4.jpg' %}" class="h-480px sm-h-250px" alt="" />
                                                 <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                     <div class="d-flex align-items-center justify-content-center w-80px h-80px rounded-circle bg-white">
                                                         <i class="bi bi-zoom-in text-dark-gray icon-extra-medium"></i>
@@ -263,9 +275,9 @@
                                 </div>
                                 <div class="swiper-slide transition-inner-all">
                                     <div class="gallery-box">
-                                        <a href="https://placehold.co/760x930" data-group="lightbox-gallery" title="Galeri">
+                                        <a href="{% static 'images/resim2.jpg' %}" data-group="lightbox-gallery" title="Galeri">
                                             <div class="position-relative gallery-image bg-dark-gray overflow-hidden border-radius-6px">
-                                                <img src="https://placehold.co/760x930" class="h-480px sm-h-250px" alt="" />
+                                                <img src="{% static 'images/resim2.jpg' %}" class="h-480px sm-h-250px" alt="" />
                                                 <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                     <div class="d-flex align-items-center justify-content-center w-80px h-80px rounded-circle bg-white">
                                                         <i class="bi bi-zoom-in text-dark-gray icon-extra-medium"></i>
@@ -277,9 +289,9 @@
                                 </div>
                                 <div class="swiper-slide transition-inner-all">
                                     <div class="gallery-box">
-                                        <a href="https://placehold.co/940x930" data-group="lightbox-gallery" title="Galeri">
+                                        <a href="{% static 'images/resim3.jpg' %}" data-group="lightbox-gallery" title="Galeri">
                                             <div class="position-relative gallery-image bg-dark-gray overflow-hidden border-radius-6px">
-                                                <img src="https://placehold.co/940x930" class="h-480px sm-h-250px" alt="" />
+                                                <img src="{% static 'images/resim3.jpg' %}" class="h-480px sm-h-250px" alt="" />
                                                 <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                     <div class="d-flex align-items-center justify-content-center w-80px h-80px rounded-circle bg-white">
                                                         <i class="bi bi-zoom-in text-dark-gray icon-extra-medium"></i>
@@ -291,9 +303,9 @@
                                 </div>
                                 <div class="swiper-slide transition-inner-all">
                                     <div class="gallery-box">
-                                        <a href="https://placehold.co/1100x930" data-group="lightbox-gallery" title="Galeri">
+                                        <a href="{% static 'images/resim4.jpg' %}" data-group="lightbox-gallery" title="Galeri">
                                             <div class="position-relative gallery-image bg-dark-gray overflow-hidden border-radius-6px">
-                                                <img src="https://placehold.co/1100x930" class="h-480px sm-h-250px" alt="" />
+                                                <img src="{% static 'images/resim4.jpg' %}" class="h-480px sm-h-250px" alt="" />
                                                 <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                     <div class="d-flex align-items-center justify-content-center w-80px h-80px rounded-circle bg-white">
                                                         <i class="bi bi-zoom-in text-dark-gray icon-extra-medium"></i>
@@ -315,7 +327,7 @@
             <div class="container overlap-gap-section">
                 <div class="row mb-1">
                     <div class="col-12 text-center" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue":200, "easing": "easeOutQuad" }'>
-                        <h2 class="alt-font ls-minus-2px text-dark-gray shadow-none" data-shadow-animation="true" data-animation-delay="700">Esnek <span class="text-highlight">fiyatlandırma<span class="bg-base-color h-2px bottom-8px separator-animation"></span></span></h2>
+                        <h2 class="alt-font ls-minus-2px text-dark-gray shadow-none" data-shadow-animation="true" data-animation-delay="700">Şeffaf <span class="text-highlight">hizmet kapsamı<span class="bg-base-color h-2px bottom-8px separator-animation"></span></span></h2>
                     </div>
                 </div>
                 <div class="row row-cols-1 row-cols-lg-2 row-cols-md-1 sm-mb-10px xs-mb-0">
@@ -325,7 +337,7 @@
                                 <div class="w-100 ps-35px pe-35px pt-15px pb-15px xs-pe-15px xs-ps-15px">
                                     <div class="fs-19 ls-05px d-flex align-items-baseline w-100">
                                         <span class="fw-700 text-dark-gray ls-minus-05px">Makine periyodik bakım</span>
-                                        <div class="text-dark-gray ms-auto flex-shrink-0">Fiyat için arayın</div>
+                                        <div class="text-dark-gray ms-auto flex-shrink-0">Kapsam bazlı</div>
                                     </div>
                                     <p>Fabrika makinelerinizin periyodik bakımı ve kontrolü.</p>
                                 </div>
@@ -335,7 +347,7 @@
                                 <div class="w-100 ps-35px pe-35px pt-25px pb-25px xs-pe-15px xs-ps-15px">
                                     <div class="fs-19 ls-05px d-flex align-items-baseline w-100">
                                         <span class="fw-700 text-dark-gray ls-minus-05px">Makine bakım + tamir paketi</span>
-                                        <div class="text-dark-gray ms-auto flex-shrink-0">İndirimli</div>
+                                        <div class="text-dark-gray ms-auto flex-shrink-0">Kuruma özel</div>
                                     </div>
                                     <p>Fabrikalara özel kombine bakım ve tamir paketi.</p>
                                 </div>
@@ -357,7 +369,7 @@
                                 <div class="w-100 ps-35px pe-35px pt-15px pb-15px xs-pe-15px xs-ps-15px">
                                     <div class="fs-19 ls-05px d-flex align-items-baseline w-100">
                                         <span class="fw-700 text-dark-gray ls-minus-05px">Motosiklet bakım</span>
-                                        <div class="text-dark-gray ms-auto flex-shrink-0">Uygun fiyat</div>
+                                        <div class="text-dark-gray ms-auto flex-shrink-0">Standart süreç</div>
                                     </div>
                                     <p>Motosiklet yağ değişimi ve periyodik bakım.</p>
                                 </div>
@@ -376,7 +388,7 @@
                                 <div class="w-100 ps-35px pe-35px pt-15px pb-15px xs-pe-15px xs-ps-15px">
                                     <div class="fs-19 ls-05px d-flex align-items-baseline w-100">
                                         <span class="fw-700 text-dark-gray ls-minus-05px">Yedek parça montajı</span>
-                                        <div class="text-dark-gray ms-auto flex-shrink-0">İşçilik dahil</div>
+                                        <div class="text-dark-gray ms-auto flex-shrink-0">Sahada montaj</div>
                                     </div>
                                     <p>Yedek parça temini ve montajı.</p>
                                 </div>
@@ -389,7 +401,6 @@
         <!-- end section -->
         <!-- start section -->
         <section class="bg-medium-yellow position-relative xs-pb-15px">
-            <div class="position-absolute left-0px top-minus-50px md-top-minus-30px sm-top-minus-25px xs-top-minus-15px background-position-left-top w-100 h-100px md-h-50px background-size-100 background-no-repeat" style="background-image: url('{% static 'images/demo-barber-home-bg-up.png' %}')"></div>
             <div class="container">
                 <div class="row justify-content-center overlap-section mb-5 overflow-hidden">
                     <div class="col-12" data-atropos>
@@ -403,7 +414,7 @@
                         <div class="atropos-scale">
                             <div class="atropos-rotate">
                                 <div class="atropos-inner">
-                                    <div class="border-radius-6px h-650px md-h-450px sm-h-350px d-flex align-items-end justify-content-center overflow-hidden cover-background" style="background-image: url('https://placehold.co/1190x630')" data-atropos-offset="-2">
+                                    <div id="video-preview-panel" class="video-preview-panel border-radius-6px h-650px md-h-450px sm-h-350px d-flex align-items-end justify-content-center overflow-hidden cover-background" style="background-image: url('{% static 'images/resim5.jpg' %}')" data-atropos-offset="-2">
                                         <div class="opacity-very-light bg-dark-gray"></div> 
                                     </div>
                                 </div>
@@ -421,28 +432,28 @@
                 </div>
                 <div class="row row-cols-1 row-cols-lg-4 row-cols-md-4 row-cols-sm-2 clients-style-04" data-anime='{ "el": "childs", "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'>
                     <div class="col text-center border-end xs-border-end-0 border-bottom sm-border-right border-color-transparent-dark-very-light transition-inner-all pt-40px pb-40px sm-pt-30px sm-pb-30px">
-                        <div class="client-box"><a href="#"><img src="https://placehold.co/225x110" alt="" /></a></div>
+                        <div class="client-box"><a href="#" class="video-preview-thumb is-active" data-preview-image="{% static 'images/resim1.jpg' %}"><img src="{% static 'images/resim1.jpg' %}" alt="" /></a></div>
                     </div>
                     <div class="col text-center border-end border-bottom border-color-transparent-dark-very-light sm-border-end-0 transition-inner-all pt-40px pb-40px sm-pt-30px sm-pb-30px">
-                        <div class="client-box"><a href="#"><img src="https://placehold.co/225x110" alt="" /></a></div>
+                        <div class="client-box"><a href="#" class="video-preview-thumb" data-preview-image="{% static 'images/resim2.jpg' %}"><img src="{% static 'images/resim2.jpg' %}" alt="" /></a></div>
                     </div>
                     <div class="col text-center border-end xs-border-end-0 border-bottom sm-border-right border-color-transparent-dark-very-light transition-inner-all pt-40px pb-40px sm-pt-30px sm-pb-30px">
-                        <div class="client-box"><a href="#"><img src="https://placehold.co/225x110" alt="" /></a></div>
+                        <div class="client-box"><a href="#" class="video-preview-thumb" data-preview-image="{% static 'images/resim3.jpg' %}"><img src="{% static 'images/resim3.jpg' %}" alt="" /></a></div>
                     </div>
                     <div class="col text-center border-bottom border-color-transparent-dark-very-light sm-border-end-0 transition-inner-all pt-40px pb-40px sm-pt-30px sm-pb-30px">
-                        <div class="client-box"><a href="#"><img src="https://placehold.co/225x110" alt="" /></a></div>
+                        <div class="client-box"><a href="#" class="video-preview-thumb" data-preview-image="{% static 'images/resim4.jpg' %}"><img src="{% static 'images/resim4.jpg' %}" alt="" /></a></div>
                     </div>
                     <div class="col text-center border-end xs-border-end-0 border-color-transparent-dark-very-light sm-border-right sm-border-bottom transition-inner-all pt-40px pb-40px sm-pt-30px sm-pb-30px">
-                        <div class="client-box"><a href="#"><img src="https://placehold.co/225x110" alt="" /></a></div>
+                        <div class="client-box"><a href="#" class="video-preview-thumb" data-preview-image="{% static 'images/resim5.jpg' %}"><img src="{% static 'images/resim5.jpg' %}" alt="" /></a></div>
                     </div>
                     <div class="col text-center border-end border-color-transparent-dark-very-light sm-border-end-0 sm-border-bottom transition-inner-all pt-40px pb-40px sm-pt-30px sm-pb-30px">
-                        <div class="client-box"><a href="#"><img src="https://placehold.co/225x110" alt="" /></a></div>
+                        <div class="client-box"><a href="#" class="video-preview-thumb" data-preview-image="{% static 'images/resim1.jpg' %}"><img src="{% static 'images/resim1.jpg' %}" alt="" /></a></div>
                     </div>
                     <div class="col text-center border-end xs-border-end-0 border-color-transparent-dark-very-light sm-border-right sm-border-bottom transition-inner-all pt-40px pb-40px sm-pt-30px sm-pb-30px">
-                        <div class="client-box"><a href="#"><img src="https://placehold.co/225x110" alt="" /></a></div>
+                        <div class="client-box"><a href="#" class="video-preview-thumb" data-preview-image="{% static 'images/resim2.jpg' %}"><img src="{% static 'images/resim2.jpg' %}" alt="" /></a></div>
                     </div>
                     <div class="col text-center transition-inner-all pt-40px pb-40px sm-border-bottom xs-border-top sm-border-bottom-0 border-color-transparent-dark-very-light sm-pt-30px sm-pb-30px">
-                        <div class="client-box"><a href="#"><img src="https://placehold.co/225x110" alt="" /></a></div>
+                        <div class="client-box"><a href="#" class="video-preview-thumb" data-preview-image="{% static 'images/resim3.jpg' %}"><img src="{% static 'images/resim3.jpg' %}" alt="" /></a></div>
                     </div>
                 </div>
             </div>
@@ -460,7 +471,7 @@
                 <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 justify-content-center mb-5" data-anime='{ "el": "childs", "translateY": [15, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'>
                     <div class="col team-style-08 border-radius-6px md-mb-30px">
                         <figure class="mb-0 position-relative">
-                            <img class="border-radius-6px" src="https://placehold.co/550x666" alt="" />
+                            <img class="border-radius-6px" src="{% static 'images/resim2.jpg' %}" alt="" />
                             <figcaption class="w-100 h-100 d-flex align-items-end p-12 lg-p-8 bg-gradient-base-transparent border-radius-6px">
                                 <div class="w-100">
                                     <span class="team-member-name fs-18 text-white d-block">Uzman Makine Teknikeri</span>
@@ -474,7 +485,7 @@
                     </div>
                     <div class="col team-style-08 border-radius-6px md-mb-30px">
                         <figure class="mb-0 position-relative">
-                            <img class="border-radius-6px" src="https://placehold.co/550x666" alt="" />
+                            <img class="border-radius-6px" src="{% static 'images/resim2.jpg' %}" alt="" />
                             <figcaption class="w-100 h-100 d-flex align-items-end p-12 lg-p-8 bg-gradient-base-transparent border-radius-6px">
                                 <div class="w-100">
                                     <span class="team-member-name fs-18 text-white d-block">Uzman Tamir Teknikeri</span>
@@ -488,7 +499,7 @@
                     </div>
                     <div class="col team-style-08 xs-mb-30px">
                         <figure class="mb-0 position-relative">
-                            <img class="border-radius-6px" src="https://placehold.co/550x666" alt="" />
+                            <img class="border-radius-6px" src="{% static 'images/resim2.jpg' %}" alt="" />
                             <figcaption class="w-100 h-100 d-flex align-items-end p-12 lg-p-8 bg-gradient-base-transparent border-radius-6px">
                                 <div class="w-100">
                                     <span class="team-member-name fs-18 text-white d-block">Motosiklet Uzmanı</span>
@@ -502,7 +513,7 @@
                     </div>
                     <div class="col team-style-08">
                         <figure class="mb-0 position-relative">
-                            <img class="border-radius-6px" src="https://placehold.co/550x666" alt="" />
+                            <img class="border-radius-6px" src="{% static 'images/resim2.jpg' %}" alt="" />
                             <figcaption class="w-100 h-100 d-flex align-items-end p-12 lg-p-8 bg-gradient-base-transparent border-radius-6px">
                                 <div class="w-100">
                                     <span class="team-member-name fs-18 text-white d-block">Teknik Destek</span>
@@ -518,7 +529,7 @@
                 <div class="row justify-content-center" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue":200, "easing": "easeOutQuad" }'>
                     <div class="col-auto text-center last-paragraph-no-margin sm-mb-20px xs-mb-0">
                         <div class="d-inline-block align-middle me-5px">
-                            <img src="https://placehold.co/114x38" class="h-20px" alt="">
+                            <img src="{% static 'images/resim5.jpg' %}" class="h-20px" alt="">
                         </div>
                         <div class="fs-20 ls-minus-05px text-dark-gray d-inline-block align-middle">Uzman ekibimiz makine ve motosiklet bakımında yanınızda.</div>
                     </div>
@@ -534,7 +545,7 @@
                     <div class="col interactive-banner-style-08 sm-mb-30px">
                         <figure class="m-0 hover-box overflow-hidden position-relative border-radius-6px">
                             <a class="stretched-link" href="#">
-                                <img src="https://placehold.co/1160x605" alt="" />
+                                <img src="{% static 'images/resim3.jpg' %}" alt="" />
                             </a>
                             <figcaption class="d-flex flex-column align-items-start justify-content-end position-absolute left-0px top-0px w-100 h-100 p-55px md-p-6">
                                 <span class="fs-13 lh-34 text-uppercase text-white border-radius-4px border border-color-transparent-white-light position-absolute right-25px top-25px ps-15px pe-15px md-right-15px md-top-15px">Yıllık anlaşma</span>
@@ -548,7 +559,7 @@
                     <div class="col interactive-banner-style-08">
                         <figure class="m-0 hover-box overflow-hidden position-relative border-radius-6px">
                             <a class="stretched-link" href="#">
-                                <img src="https://placehold.co/1160x605" alt="" />
+                                <img src="{% static 'images/resim3.jpg' %}" alt="" />
                             </a>
                             <figcaption class="d-flex flex-column align-items-start justify-content-end position-absolute left-0px top-0px w-100 h-100 p-55px md-p-6">
                                 <span class="fs-13 lh-34 text-uppercase text-white border-radius-4px border border-color-transparent-white-light position-absolute right-25px top-25px ps-15px pe-15px md-right-15px md-top-15px">Ek hizmet</span>
@@ -574,7 +585,7 @@
                                     <span class="fs-19 fw-700 text-dark-gray">Fabrika yöneticisi - İstanbul</span>
                                 </div>
                                 <div class="swiper-slide text-center"> 
-                                    <span class="fs-20 lh-32 ls-minus-05px d-block mb-10px">Makine arızası olduğunda hemen müdahale ediyorlar. Randevu almadan da çağırabiliyoruz. Fiyatları da makul, uzun süredir çalışıyoruz.</span>
+                                    <span class="fs-20 lh-32 ls-minus-05px d-block mb-10px">Makine arızası olduğunda hemen müdahale ediyorlar. Randevu almadan da çağırabiliyoruz. Süreçleri çok düzenli, uzun süredir çalışıyoruz.</span>
                                     <span class="fs-19 fw-700 text-dark-gray">Üretim müdürü - Ankara</span>
                                 </div>
                                 <div class="swiper-slide text-center"> 
@@ -644,7 +655,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-4 col-lg-5 md-mb-50px">
-                        <h3 class="alt-font ls-minus-2px text-dark-gray mb-20px shadow-none" data-shadow-animation="true" data-animation-delay="700"><span class="text-highlight">Randevu<span class="bg-base-color h-2px bottom-8px separator-animation"></span></span> alın</h3>
+                        <h3 class="alt-font ls-minus-2px text-dark-gray mb-20px shadow-none" data-shadow-animation="true" data-animation-delay="700"><span class="text-highlight">İletişime<span class="bg-base-color h-2px bottom-8px separator-animation"></span></span> geçin</h3>
                         <p class="mb-30px">Bilgileriniz ekibimize iletilecek, en kısa sürede sizinle iletişime geçeceğiz.</p>
                         <div class="icon-with-text-style-01 feature-box feature-box-left-icon-middle bg-medium-yellow p-25px border-radius-6px last-paragraph-no-margin w-95 md-w-100 text-start">
                             <div class="feature-box-icon me-15px">
@@ -663,26 +674,10 @@
                                     <div class="col-md-6 sm-mb-20px">
                                         <input class="mb-20px border-color-transparent-dark-very-light form-control bg-transparent required" type="text" name="name" placeholder="Adınız Soyadınız*" />
                                         <input class="mb-20px border-color-transparent-dark-very-light form-control bg-transparent required" type="email" name="email" placeholder="E-posta adresiniz*" />
-                                        <div class="date-time row gutter-very-small">
-                                            <div class="date-icon col-xl-6 lg-mb-25px">
-                                                <input class="form-control border-color-transparent-dark-very-light bg-transparent" type="date" name="date" value="2023-01-01" min="2023-01-01" max="2099-12-31"  /> 
-                                            </div>
-                                            <div class="time-icon col-xl-6"> 
-                                                <input class="form-control border-color-transparent-dark-very-light bg-transparent" type="time" name="time" value="09:12" min="09:00" max="12:00" /> 
-                                            </div>
-                                        </div>
+                                        <input class="mb-20px border-color-transparent-dark-very-light form-control bg-transparent required" type="tel" name="phone" placeholder="Telefon numaranız*" />
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="mb-20px select">
-                                            <select class="form-control border-color-transparent-dark-very-light bg-transparent" name="select">
-                                                <option value="">Hizmet seçin</option>
-                                                <option value="Makine Bakımı">Makine Bakımı</option>
-                                                <option value="Makine Tamiri">Makine Tamiri</option>
-                                                <option value="Motosiklet Bakımı">Motosiklet Bakımı</option>
-                                                <option value="Yedek Parça">Yedek Parça</option>
-                                                <option value="Aciller">Acil Arıza Müdahalesi</option>
-                                            </select>
-                                        </div>
+                                        <input class="mb-20px border-color-transparent-dark-very-light form-control bg-transparent" type="text" name="subject" placeholder="Talep konusu (opsiyonel)" />
                                         <textarea class="form-control border-color-transparent-dark-very-light bg-transparent h-140px" cols="20" rows="4" name="comment" placeholder="Mesajınız"></textarea>
                                     </div>
                                     <div class="col-md-6 mt-30px sm-mt-20px">
@@ -708,4 +703,155 @@
             </div>
         </section>
         <!-- end section -->
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    function syncHeroOffset() {
+        const navbar = document.querySelector("header .navbar");
+        if (!navbar) {
+            return;
+        }
+        const navHeight = Math.ceil(navbar.getBoundingClientRect().height);
+        document.documentElement.style.setProperty("--hero-nav-offset", navHeight + "px");
+    }
+
+    syncHeroOffset();
+    window.addEventListener("resize", syncHeroOffset);
+    window.addEventListener("orientationchange", syncHeroOffset);
+
+    const navbarToggler = document.querySelector(".navbar-toggler");
+    if (navbarToggler) {
+        navbarToggler.addEventListener("click", function () {
+            setTimeout(syncHeroOffset, 200);
+        });
+    }
+
+    const heroSection = document.querySelector(".hero-modern-home");
+    const heroSlides = document.querySelectorAll(".hero-modern-slide");
+    const heroDots = document.querySelectorAll(".hero-modern-dot");
+    const heroPrev = document.querySelector(".hero-modern-prev");
+    const heroNext = document.querySelector(".hero-modern-next");
+    let heroIndex = 0;
+    let heroTimer = null;
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    function setHeroSlide(index) {
+        if (heroSlides.length === 0) {
+            return;
+        }
+        heroSlides.forEach(function (slide) {
+            slide.classList.remove("is-active");
+        });
+        heroDots.forEach(function (dot) {
+            dot.classList.remove("is-active");
+        });
+
+        heroSlides[index].classList.add("is-active");
+        if (heroDots[index]) {
+            heroDots[index].classList.add("is-active");
+        }
+        heroIndex = index;
+    }
+
+    function startHeroSlider() {
+        if (heroSlides.length < 2) {
+            return;
+        }
+        if (heroTimer) {
+            clearInterval(heroTimer);
+        }
+        heroTimer = setInterval(function () {
+            const nextIndex = (heroIndex + 1) % heroSlides.length;
+            setHeroSlide(nextIndex);
+        }, 5200);
+    }
+
+    function prevHeroSlide() {
+        if (heroSlides.length < 2) {
+            return;
+        }
+        const prevIndex = (heroIndex - 1 + heroSlides.length) % heroSlides.length;
+        setHeroSlide(prevIndex);
+        startHeroSlider();
+    }
+
+    function nextHeroSlide() {
+        if (heroSlides.length < 2) {
+            return;
+        }
+        const nextIndex = (heroIndex + 1) % heroSlides.length;
+        setHeroSlide(nextIndex);
+        startHeroSlider();
+    }
+
+    if (heroDots.length > 0) {
+        heroDots.forEach(function (dot, index) {
+            dot.addEventListener("click", function () {
+                setHeroSlide(index);
+                if (heroTimer) {
+                    startHeroSlider();
+                }
+            });
+        });
+    }
+
+    if (heroPrev) {
+        heroPrev.addEventListener("click", prevHeroSlide);
+    }
+    if (heroNext) {
+        heroNext.addEventListener("click", nextHeroSlide);
+    }
+    if (heroSection) {
+        heroSection.addEventListener("mouseenter", function () {
+            if (heroTimer) {
+                clearInterval(heroTimer);
+            }
+        });
+        heroSection.addEventListener("mouseleave", startHeroSlider);
+        heroSection.addEventListener("touchstart", function (event) {
+            touchStartX = event.changedTouches[0].clientX;
+        }, {passive: true});
+        heroSection.addEventListener("touchend", function (event) {
+            touchEndX = event.changedTouches[0].clientX;
+            const delta = touchEndX - touchStartX;
+            if (Math.abs(delta) < 40) {
+                return;
+            }
+            if (delta > 0) {
+                prevHeroSlide();
+            } else {
+                nextHeroSlide();
+            }
+        }, {passive: true});
+    }
+
+    startHeroSlider();
+
+    const previewPanel = document.getElementById("video-preview-panel");
+    const thumbs = document.querySelectorAll(".video-preview-thumb");
+
+    if (!previewPanel || thumbs.length === 0) {
+        return;
+    }
+
+    thumbs.forEach(function (thumb) {
+        thumb.addEventListener("click", function (event) {
+            event.preventDefault();
+            const imageSrc = thumb.getAttribute("data-preview-image");
+            if (!imageSrc) {
+                return;
+            }
+
+            previewPanel.style.backgroundImage = "url('" + imageSrc + "')";
+            thumbs.forEach(function (item) {
+                item.classList.remove("is-active");
+            });
+            thumb.classList.add("is-active");
+        });
+    });
+});
+</script>
 {% endblock %}
