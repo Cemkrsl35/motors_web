@@ -13132,9 +13132,10 @@ blockquote footer {
 }
 .mfp-arrow-left:before {
   border-right: none;
-  content: "\e629";
+  content: "\f053";
   font-size: 20px;
-  font-family: "themify";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
   color: var(--white);
   line-height: 60px;
   width: 100%;
@@ -13145,9 +13146,10 @@ blockquote footer {
 }
 .mfp-arrow-right:before {
   border-left: none;
-  content: "\e628";
+  content: "\f054";
   font-size: 20px;
-  font-family: "themify";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
   color: var(--white);
   line-height: 60px;
   width: 100%;
@@ -13332,7 +13334,7 @@ button.mfp-close:before,
 button.mfp-close:active:before {
   content: "\f00d";
   color: var(--black);
-  font-family: "Font Awesome 7 Free";
+  font-family: "Font Awesome 6 Free";
   font-size: 16px;
   font-weight: 900;
 }
